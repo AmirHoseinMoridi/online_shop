@@ -9,6 +9,6 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public abstract class Entity<ID> {
+public abstract class BaseEntity<ID> {
     private ID id;
 }

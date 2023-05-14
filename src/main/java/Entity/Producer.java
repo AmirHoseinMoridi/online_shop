@@ -1,6 +1,7 @@
 package Entity;
 
-import Base.Entity.User;
+import Base.Entity.BaseUser;
+import Entity.Enumeration.ProducerRank;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,5 +11,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Producer extends User {
+public class Producer extends BaseUser {
+    public static final String PRODUCER_RANK = "producer_rank";
+    ProducerRank producerRank;
 }

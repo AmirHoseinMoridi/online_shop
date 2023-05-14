@@ -1,6 +1,6 @@
 package Entity;
 
-import Base.Entity.Salable;
+import Base.Entity.BaseSalable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,6 +10,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Shoes extends Salable {
+public class Shoes extends BaseSalable {
+    public static final String SIZE = "size";
     private int size;
 }

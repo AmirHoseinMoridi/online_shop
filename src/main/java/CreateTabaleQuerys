@@ -1,0 +1,21 @@
+create table "user"
+(
+    id             serial not null primary key,
+    first_name     varchar(200),
+    last_name      varchar(200),
+    username       varchar(200),
+    password      varchar(200),
+    age            int,
+    user_type      varchar(200),
+    date_of_log_in date,
+    producer_rank  varchar(200)
+);
+
+create table "salable"
+(
+    id     bigSerial not null primary key,
+    name   varchar(200),
+    price  double precision,
+    author varchar(200),
+    size   int
+);

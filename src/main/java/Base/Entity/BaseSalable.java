@@ -9,7 +9,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public abstract class Salable extends Entity<Long>{
+public class BaseSalable extends BaseEntity<Long> {
+    public static final String TABLE_NAME = "salable";
+    public static final String NAME = "name";
+    public static final String PRICE = "price";
     private String name;
     private double price;
 }
