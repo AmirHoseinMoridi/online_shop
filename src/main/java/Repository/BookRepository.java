@@ -23,7 +23,7 @@ public class BookRepository extends BaseSalableRepositoryImpl<Book> {
 
     @Override
     protected void fillPrepStatementForSave(PreparedStatement preparedStatement, Book book) throws SQLException {
-        super.fillPrepStatementForSave(preparedStatement, book);
+        //super.fillPrepStatementForSave(preparedStatement, book);
         preparedStatement.setString(3,book.getAuthor());
     }
 }

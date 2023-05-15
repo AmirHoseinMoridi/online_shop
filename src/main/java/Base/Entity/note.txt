@@ -1,0 +1,8 @@
+
+this structure is worth.
+
+move BaseSalable and BaseUser into main entity package and change it name to Product and User .
+
+and Product and User should extend from BaseEntity and inherit ID parameter.
+
+

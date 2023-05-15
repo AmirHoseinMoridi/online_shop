@@ -1,0 +1,10 @@
+concept of base repository is for gathering most common method in one place.
+
+on other hand , in my idea it's not best practice for placing entity repositories in base package.
+
+you should put them into main repository package and make 'impl' package for their implementation .
+
+now in this place "main repository package" you should extend from base repository.
+
+
+

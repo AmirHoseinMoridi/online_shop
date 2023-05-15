@@ -10,8 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BaseUserRepositoryImpl<T extends BaseUser>
-    extends BaseRepositoryImpl<T,Integer>
+public class BaseUserRepositoryImpl<T extends BaseUser> extends BaseRepositoryImpl<T,Integer>
 implements BaseUserRepository<T> {
 
 

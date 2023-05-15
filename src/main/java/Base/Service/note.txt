@@ -1,0 +1,1 @@
+look at the note.txt in base repository and repeat these step for service package.

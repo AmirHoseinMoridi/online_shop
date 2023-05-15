@@ -1,6 +1,7 @@
 package Base.Repository.Impl;
 
 import Base.Entity.BaseEntity;
+import Base.Repository.BaseRepository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,8 +9,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID>
-        implements Base.Repository.BaseRepository<T, ID> {
+public abstract class BaseRepositoryImpl<T extends BaseEntity<ID>, ID> implements BaseRepository<T, ID> {
     protected final Connection connection;
 
     public BaseRepositoryImpl(Connection connection) {

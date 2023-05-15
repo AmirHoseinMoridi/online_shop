@@ -1,0 +1,11 @@
+in this package , every  thing is ok.
+
+but one thing is that you should pay attend to it.
+
+in "DataBaseConnection.class" you have method for closing the DB.
+
+if you hold CTRL and click on "Connection" field you will see , this class implemented Auto Closable.
+
+you can handle transaction with "try with resource".
+
+read about it.
