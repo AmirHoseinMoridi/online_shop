@@ -22,7 +22,8 @@ public class ProducerRepository extends BaseUserRepositoryImpl<Producer> {
 
     @Override
     protected void fillPrepStatementForSave(PreparedStatement preparedStatement, Producer producer) throws SQLException {
-       // super.fillPrepStatementForSave(preparedStatement, producer);
+       super.fillPrepStatementForSave(preparedStatement, producer);
         preparedStatement.setString(7,producer.getProducerRank().name());
     }
+
 }

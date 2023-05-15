@@ -21,7 +21,7 @@ public class ShoesRepository extends BaseSalableRepositoryImpl<Shoes> {
 
     @Override
     protected void fillPrepStatementForSave(PreparedStatement preparedStatement, Shoes shoes) throws SQLException {
-        //super.fillPrepStatementForSave(preparedStatement, shoes);
+        super.fillPrepStatementForSave(preparedStatement, shoes);
         preparedStatement.setInt(3,shoes.getSize());
     }
 }

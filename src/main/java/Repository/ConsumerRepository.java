@@ -25,7 +25,7 @@ public class ConsumerRepository extends BaseUserRepositoryImpl<Consumer> {
 
     @Override
     protected void fillPrepStatementForSave(PreparedStatement preparedStatement, Consumer consumer) throws SQLException {
-        //super.fillPrepStatementForSave(preparedStatement, consumer);
+        super.fillPrepStatementForSave(preparedStatement, consumer);
         preparedStatement.setDate(7, (Date) consumer.getDateOfLogIn());
     }
 }
